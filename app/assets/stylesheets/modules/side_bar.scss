@@ -8,15 +8,15 @@
     &__top-item {
       height: 20px;
       width: 260px;
-      background-color: #ffffff;
       margin: 0 20px;
       display: flex;
       justify-content: space-between;
       &__name {
+        color: #ffffff;
+        font-size: 16px;
         line-height: 20px; 
       }
       &__icons {
-        background-color: #d2d2d2;
         width: 60px;
         text-align: right;
         &__btn--edit {
