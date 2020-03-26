@@ -3,6 +3,35 @@
   background-color: #ffffff;
   &__group-info {
     height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    &__group {
+      &__name {
+        color: #333333;
+        font-size: 20px;
+        padding: 35px 0 15px;
+      }
+      &__member {
+        color: #999999;
+        font-size: 12px;
+      }
+    }
+    &__btn {
+      text-decoration: none;
+      &--edit {
+        border: 1px solid;
+        color: #38aef0;
+        font-size: 16px;
+        text-align: center;
+        height: 40px;
+        width: 72px;
+        margin: 28px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
   }
   &__message-list {
     background-color: #fafafa;
