@@ -4,8 +4,10 @@
       .side-bar__user-name__top-item__name
         masaki
       .side-bar__user-name__top-item__icons
-        = link_to "#", class: "" do
-          = icon('fa', 'edit')
-        = link_to "#", class: "" do
-          = icon('fa', 'cog')
+        = link_to "#", class: "side-bar__user-name__top-item__icons__btn--edit" do
+          = icon('fa', 'edit', class: "side-bar__user-name__top-item__icons__btn--edit--icon")
+          %span<>
+        = link_to "#", class: "side-bar__user-name__top-item__icons__btn--cog" do
+          = icon('fa', 'cog', class: "side-bar__user-name__top-item__icons__btn--cog--icon")
+          %span<>
   .side-bar__group-list

@@ -18,6 +18,21 @@
       &__icons {
         background-color: #d2d2d2;
         width: 60px;
+        text-align: right;
+        &__btn--edit {
+          text-decoration: none;
+          &--icon {
+            color: #ffffff;
+            margin-left: 5px;
+          }
+        }
+        &__btn--cog {
+          text-decoration: none;
+          &--icon {
+            color: #ffffff;
+            margin-left: 5px;
+          }
+        }
       }
     }
   }
