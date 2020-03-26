@@ -1,6 +1,7 @@
 .side-bar {
   width: 300px;
   background-color: #253141;
+  font-weight: bold;
   &__user-name {
     height: 100px;
     display: flex;
@@ -39,5 +40,15 @@
   &__group-list {
     background-color: #2f3e51;
     height: calc(100vh - 100px);
+    &__group {
+      color: #ffffff;
+      font-size: 16px;
+      padding: 20px 20px 5px;
+    }
+    &__message {
+      color: #ffffff;
+      font-size: 11px;
+      padding: 0px 20px 40px;
+    }
   }
 }
