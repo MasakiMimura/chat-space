@@ -1,0 +1,102 @@
+.main-chat {
+  width: calc(100vw - 300px);
+  background-color: #ffffff;
+  &__group-info {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 40px;
+    &__group {
+      &__name {
+        color: #333333;
+        font-size: 20px;
+        padding: 35px 0 15px;
+      }
+      &__member {
+        color: #999999;
+        font-size: 12px;
+      }
+    }
+    &__btn {
+      text-decoration: none;
+      &--edit {
+        border: 1px solid;
+        color: #38aef0;
+        font-size: 16px;
+        text-align: center;
+        height: 40px;
+        width: 72px;
+        margin: 28px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+  &__message-list {
+    background-color: #fafafa;
+    height: calc(100vh - 100px - 90px);
+    padding-top: 35px;
+    padding-left: 40px;
+    &__member-info {
+      display: flex;
+      justify-content: flex-start;
+      padding-bottom: 12px;
+      &__member {
+        color: #333333;
+        font-size: 16px;
+      }
+      &__posted-date {
+        color: #999999;
+        font-size: 12px;
+      }
+    }
+    &__member-message {
+      color: #434a54;
+      font-size: 14px;
+      padding-bottom: 46px;
+    }
+  }
+  &__message-from {
+    background-color: #d2d2d2;
+    height: 90px;
+    padding: 20px 40px;
+    &__form-group {
+      display: flex;
+      &__input-group {
+        position: relative;
+        width: 100%;
+        &__message-input {
+          height: 50px;
+          width: 100%;
+          padding: 0 40px 0 10px;
+          color: #434a54;
+          border-style: none;
+        }
+        &__image-input {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          cursor: pointer;
+          &--hidden {
+            visibility: hidden;  // 「ファイルを選択」の見た目を消す
+            display: none;       // 「ファイルを選択」の言葉自体（幅）を消す
+          }
+        }
+      }
+      &__btn{
+        text-decoration: none;
+        &--send {
+          background-color: #38aef0;
+          border: 1px solid #38aef0;
+          color: #ffffff;
+          width: 100px;
+          height: 50px;
+          padding: 0 30px;
+          margin-left: 15px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

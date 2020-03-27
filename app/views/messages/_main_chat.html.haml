@@ -1,0 +1,26 @@
+.main-chat
+  .main-chat__group-info
+    .main-chat__group-info__group
+      .main-chat__group-info__group__name
+        test
+      .main-chat__group-info__group__member
+        Member：masaki
+    = link_to "#", class: "main-chat__group-info__btn" do
+      .main-chat__group-info__btn--edit
+        Edit
+  .main-chat__message-list
+    .main-chat__message-list__member-info
+      .main-chat__message-list__member-info__member
+        masaki
+      .main-chat__message-list__member-info__posted-date
+        2020/03/26(Thu) 15:30:00
+    .main-chat__message-list__member-message
+      最高！
+  .main-chat__message-from
+    %form.main-chat__message-from__form-group
+      .main-chat__message-from__form-group__input-group
+        %input.main-chat__message-from__form-group__input-group__message-input{:placeholder => "type a message", :type => "text"}
+        %label.main-chat__message-from__form-group__input-group__image-input{:for => "message_image"}
+          = icon('fa', 'image', class: "main-chat__message-from__group__image-input--icon")
+          %input.main-chat__message-from__form-group__input-group__image-input--hidden{type: "file"}
+      %input.main-chat__message-from__form-group__btn--send{type: "submit", value: "Send"}
