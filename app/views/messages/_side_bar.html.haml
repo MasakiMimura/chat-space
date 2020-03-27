@@ -1,13 +1,13 @@
 .side-bar
   .side-bar__user-name
     .side-bar__user-name__top-item
-      .side-bar__user-name__top-item__name
-        masaki
+      %h3.side-bar__user-name__top-item__name
+        = current_user.name
       .side-bar__user-name__top-item__icons
         = link_to "#", class: "side-bar__user-name__top-item__icons__btn--edit" do
           = icon('fa', 'edit', class: "side-bar__user-name__top-item__icons__btn--edit--icon")
           %span<>
-        = link_to "#", class: "side-bar__user-name__top-item__icons__btn--cog" do
+        = link_to edit_user_path(current_user), class: "side-bar__user-name__top-item__icons__btn--cog" do
           = icon('fa', 'cog', class: "side-bar__user-name__top-item__icons__btn--cog--icon")
           %span<>
   .side-bar__group-list
