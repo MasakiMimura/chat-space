@@ -60,5 +60,43 @@
   &__message-from {
     background-color: #d2d2d2;
     height: 90px;
+    padding: 20px 40px;
+    &__form-group {
+      display: flex;
+      &__input-group {
+        position: relative;
+        width: 100%;
+        &__message-input {
+          height: 50px;
+          width: 100%;
+          padding: 0 40px 0 10px;
+          color: #434a54;
+          border-style: none;
+        }
+        &__image-input {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          cursor: pointer;
+          &--hidden {
+            visibility: hidden;  // 「ファイルを選択」の見た目を消す
+            display: none;       // 「ファイルを選択」の言葉自体（幅）を消す
+          }
+        }
+      }
+      &__btn{
+        text-decoration: none;
+        &--send {
+          background-color: #38aef0;
+          border: 1px solid #38aef0;
+          color: #ffffff;
+          width: 100px;
+          height: 50px;
+          padding: 0 30px;
+          margin-left: 15px;
+          cursor: pointer;
+        }
+      }
+    }
   }
 }
