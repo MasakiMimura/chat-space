@@ -40,10 +40,12 @@
   &__group-list {
     background-color: #2f3e51;
     height: calc(100vh - 100px);
+    padding: 20px 20px 0;
     &__group {
       color: #ffffff;
       font-size: 16px;
       padding: 20px 20px 5px;
+      text-decoration: none;
     }
     &__message {
       color: #ffffff;
