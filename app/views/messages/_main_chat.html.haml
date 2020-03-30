@@ -2,9 +2,11 @@
   .main-chat__group-info
     .main-chat__group-info__group
       .main-chat__group-info__group__name
-        test
+        = @group.name
       .main-chat__group-info__group__member
-        Member：masaki
+        Members:
+        - @group.users.each do |user|
+          = user.name
     = link_to "#", class: "main-chat__group-info__btn" do
       .main-chat__group-info__btn--edit
         Edit
