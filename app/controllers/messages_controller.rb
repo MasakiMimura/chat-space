@@ -3,6 +3,7 @@ class MessagesController < ApplicationController
 
   def index
     @message = Message.new
+    # グループ情報に紐付いたメッセージ情報（アソシエーション）をユーザー単位に紐づけて（includes）取得
     @messages = @group.messages.includes(:user)
   end
 
